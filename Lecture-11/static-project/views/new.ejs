@@ -1,0 +1,14 @@
+<%- include("./partials/header") %>
+    <h1> Form for adding new blog </h1>
+
+    <a href="/blogs">Back</a>
+    <form action="/blogs" method="POST">
+        <label for="auth">Author:</label>
+        <input type="text" name="author" id="auth">
+        <br>
+        <label for="comment">Comment:</label>
+        <input type="text" name="comment" id="comment">
+        <br>
+        <button>Add Blog</button>
+    </form>
+<%- include("./partials/footer") %>

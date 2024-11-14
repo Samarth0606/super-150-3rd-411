@@ -1,0 +1,19 @@
+<%- include("./partials/header") %>
+    <h1> All the blogs </h1>
+    
+    <button> <a href="/blog/new">New Blog</a> </button>
+
+    <% for(let blog of dummyBlogs){ %>
+        <div>
+            <h1><%= blog.id %></h1>
+            <h1><%= blog.author %></h1>
+            <h1><%= blog.comment %></h1>
+            <a href="/blogs/<%= blog.id %>">Show me</a>
+            <a href="/blogs/<%= blog.id %>/edit">Edit me</a>
+            <!-- <a href="/blogs/<%= blog.id %>/edit">Delete me</a> -->
+            <form action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
+                <button>DELETE</button>
+            </form>
+        </div>
+    <% } %>
+<%- include("./partials/footer") %>

@@ -1,0 +1,1 @@
+console.log("marna mai teriya baha vich chand ve");
