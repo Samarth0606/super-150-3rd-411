@@ -1,0 +1,10 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+
+
+div>img{
+    width: 100%;
+    height: 100%;
+}
